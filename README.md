@@ -2,6 +2,8 @@
 
 Berisi tentang ya tugas doang yang bertujuan untuk dokumentasi bagi diri sendiri selama kuliah :v
 
+Demo : [Link Kumpulan Tugas](https://jauhariq.github.io/kumpulan-tugas/)
+
 ## Daftar Isi
 
 - [Daftar Isi](#daftar-isi)
