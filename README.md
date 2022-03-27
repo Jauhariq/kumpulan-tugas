@@ -14,7 +14,7 @@ Berisi tentang ya tugas doang yang bertujuan untuk dokumentasi bagi diri sendiri
 
 | Pertemuan        | Developer | URL | Status  | Deskripsi |
 | --------------- |:---------:|:---:|:-------:|:----------|
-| Pertama | Jauhariq | [Link](web-programming1/wp1-p2.html) | `Aktif` | Jadi pertemuan pertama itu ngebahas tentang html, dan untuk tugasnya bikin table sesuai pada contoh dengan menggunakan html |
+| Kedua | Jauhariq | [Link](web-programming1/wp1-p2.html) | `Aktif` | Jadi pertemuan pertama itu ngebahas tentang html, dan untuk tugasnya bikin table sesuai pada contoh dengan menggunakan html |
 
 ## Kontak
 
