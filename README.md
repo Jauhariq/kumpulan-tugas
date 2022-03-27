@@ -8,11 +8,18 @@ Demo : [Link Kumpulan Tugas](https://jauhariq.github.io/kumpulan-tugas/)
 
 - [Daftar Isi](#daftar-isi)
   - [Daftar Matkul](#daftar-matkul)
+    - [Dasar Pemrograman](#dasar-pemrograman)
     - [Web Programming 1](#web-programming-1)
   - [Kontak](#kontak)
   - [:fire: TERIMAKASIH :fire:](#fire-terimakasih-fire)
 
 ## Daftar Matkul
+
+### Dasar Pemrograman
+
+| Pertemuan        | Developer | URL | Status  | Deskripsi |
+| --------------- |:---------:|:---:|:-------:|:----------|
+| Akhir | Jauhariq dan kawan" | [Link](dasar-pemrograman/ta.html) | `Aktif` | Sebuah projek untuk tugas akhir kami di suruh untuk membuat sebuah program dari python, kemudian dibuatlah sebuah program kasir sederhana |
 
 ### Web Programming 1
 
