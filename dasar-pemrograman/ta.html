@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Tugas Akhir Dasar Pemrograman</title>
+  </head>
+  <body>
+    <center>
+    <font color="black" size="5">TUGAS Akhir Dasar Pemrograman</font>
+    <br>
+    <p>Ya jadi kelompok kami disuruh bikin program sederhana dari python, lalu dibuatlah sebuah program kasir sederhana yang kami namai dengan kasir charlotte :v.<br><br>Script/codenya dibawah ini!</p>
+    </center>
+    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span class="hljs-comment" style="color: rgb(136, 0, 0);">#Program Pembayaran Salon Charlotte</span>
+<span class="hljs-keyword" style="color: rgb(0, 0, 136);">import</span> questionary
+<span class="hljs-keyword" style="color: rgb(0, 0, 136);">from</span> datetime <span class="hljs-keyword" style="color: rgb(0, 0, 136);">import</span> datetime
+list = []
+harga = []
+total = []
+jumlahpesan=[]
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(0, 0, 136);">def</span> <span class="hljs-title" style="color: rgb(102, 0, 102);">login</span><span class="hljs-params" style="color: rgb(102, 0, 102);">()</span>:</span>
+    print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"+=============================+"</span>)
+    print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"|////|HALAMAN LOGIN KASIR|////|"</span>)
+    print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"+=============================+"</span>)
+    username = questionary.text(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Username :"</span>).ask()
+    password = questionary.password(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Password :"</span>).ask()
+ 
+    <span class="hljs-keyword" style="color: rgb(0, 0, 136);">if</span> username == <span class="hljs-string" style="color: rgb(0, 136, 0);">"admin"</span> <span class="hljs-keyword" style="color: rgb(0, 0, 136);">and</span> password == <span class="hljs-string" style="color: rgb(0, 136, 0);">"123"</span>:
+        print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Login berhasil...\n"</span>)
+        menu()
+    <span class="hljs-keyword" style="color: rgb(0, 0, 136);">else</span>:
+        print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Username atau Password salah, Silahkan coba kembali...\n"</span>)
+        login()
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(0, 0, 136);">def</span> <span class="hljs-title" style="color: rgb(102, 0, 102);">menu</span><span class="hljs-params" style="color: rgb(102, 0, 102);">()</span>:</span>
+    print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"""
++=======================================+
+|///////////////////////////////////////|
+|/////|Daftar Menu Salon Charlotte|/////|
+|///////////////////////////////////////|
++=======================================+
+|   Perawatan    |  Kode  |    Harga    |
++----------------+--------+-------------+
+| Colouring      |  CLR   |  Rp.100000  |
+| Rebounding     |  RBD   |  Rp.150000  |
+| Hair Cut       |  HCT   |  Rp.30000   |
+| Hair Mask      |  HMK   |  Rp.60000   |
+| Manicure       |  MNC   |  Rp.35000   |
++=======================================+
+ """</span>)
+    x1=<span class="hljs-number" style="color: rgb(0, 102, 102);">0</span>
+    pertanyaan=<span class="hljs-string" style="color: rgb(0, 136, 0);">"Y"</span>
+    <span class="hljs-keyword" style="color: rgb(0, 0, 136);">while</span> pertanyaan !=<span class="hljs-string" style="color: rgb(0, 136, 0);">"N"</span>:
+        pesan = str(input(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Kode Perawatan [CLR/RBD/HCT/HMK/MNC] : "</span>)).upper()
+        <span class="hljs-keyword" style="color: rgb(0, 0, 136);">if</span> pesan == <span class="hljs-string" style="color: rgb(0, 136, 0);">"CLR"</span>:
+            list.append(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Colouring "</span>)
+            harga.append(<span class="hljs-number" style="color: rgb(0, 102, 102);">100000</span>)
+        <span class="hljs-keyword" style="color: rgb(0, 0, 136);">elif</span> pesan == <span class="hljs-string" style="color: rgb(0, 136, 0);">"RBD"</span>:
+            list.append(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Rebounding"</span>)
+            harga.append(<span class="hljs-number" style="color: rgb(0, 102, 102);">150000</span>)
+        <span class="hljs-keyword" style="color: rgb(0, 0, 136);">elif</span> pesan == <span class="hljs-string" style="color: rgb(0, 136, 0);">"HCT"</span>:
+            list.append(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Hair Cut  "</span>)
+            harga.append(<span class="hljs-number" style="color: rgb(0, 102, 102);">30000</span> )
+        <span class="hljs-keyword" style="color: rgb(0, 0, 136);">elif</span> pesan == <span class="hljs-string" style="color: rgb(0, 136, 0);">"HMK"</span>:
+            list.append(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Hair Mask "</span>)
+            harga.append(<span class="hljs-number" style="color: rgb(0, 102, 102);">60000</span> )
+        <span class="hljs-keyword" style="color: rgb(0, 0, 136);">elif</span> pesan == <span class="hljs-string" style="color: rgb(0, 136, 0);">"MNC"</span>:
+            list.append(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Manicure  "</span>)
+            harga.append(<span class="hljs-number" style="color: rgb(0, 102, 102);">35000</span> )
+        <span class="hljs-keyword" style="color: rgb(0, 0, 136);">else</span>:
+            list.append(<span class="hljs-string" style="color: rgb(0, 136, 0);">"    -     "</span>)
+            harga.append(<span class="hljs-number" style="color: rgb(0, 102, 102);">0</span>)
+        jumlahpesan.append(int(input(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Jumlah Perawatan : "</span>)))
+        total.append(int(harga[x1]* jumlahpesan[x1]))
+        
+        pertanyaan=input(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Ingin Menambahkan pesanan ? [Y/N]  : "</span>).upper()
+        x1=x1+<span class="hljs-number" style="color: rgb(0, 102, 102);">1</span>
+    struk()
+        
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(0, 0, 136);">def</span> <span class="hljs-title" style="color: rgb(102, 0, 102);">struk</span><span class="hljs-params" style="color: rgb(102, 0, 102);">()</span>:</span>
+    waktu = (f<span class="hljs-string" style="color: rgb(0, 136, 0);">'Tanggal : {datetime.now():%d/%m/%Y        Jam : %H:%M:%S}'</span>)
+    print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"""
++==========================================+
+|//////////////////////////////////////////|
+|////////////|Struk Pembelian|/////////////|
+|//////////////////////////////////////////|
++------------------------------------------+
+ {}
++------------------------------------------+
+|No.Perawatan         Jumlah       Total   |
+|                     Pesan        Harga   |
++------------------------------------------+"""</span>.format(waktu))
+    x=<span class="hljs-number" style="color: rgb(0, 102, 102);">0</span>
+    <span class="hljs-keyword" style="color: rgb(0, 0, 136);">while</span> x&lt;len(list):
+        print(<span class="hljs-string" style="color: rgb(0, 136, 0);">" {}  {}          {}       Rp. {}    "</span>.format(x+<span class="hljs-number" style="color: rgb(0, 102, 102);">1</span>,list[x],jumlahpesan[x],total[x]))
+        x=x+<span class="hljs-number" style="color: rgb(0, 102, 102);">1</span>
+    print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"+------------------------------------------+"</span>)
+    harusbayar=sum(total)
+    print(<span class="hljs-string" style="color: rgb(0, 136, 0);">" Total Biaya                    Rp."</span>,harusbayar)
+    uang=int(input(<span class="hljs-string" style="color: rgb(0, 136, 0);">" Masukan Uang Anda              Rp. "</span>))
+    kembalian= uang-harusbayar
+    <span class="hljs-keyword" style="color: rgb(0, 0, 136);">if</span> kembalian &lt; <span class="hljs-number" style="color: rgb(0, 102, 102);">0</span> :
+        print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"+==========================================+"</span>)
+        print(<span class="hljs-string" style="color: rgb(0, 136, 0);">" Maaf uang anda kurang          Rp."</span>,abs(kembalian))
+    <span class="hljs-keyword" style="color: rgb(0, 0, 136);">else</span>:
+        print(<span class="hljs-string" style="color: rgb(0, 136, 0);">" Kembali                        Rp."</span>,kembalian,<span class="hljs-string" style="color: rgb(0, 136, 0);">""</span>)
+    print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"+==========================================+\n"</span>)
+    kembali()
+<span class="hljs-function"><span class="hljs-keyword" style="color: rgb(0, 0, 136);">def</span> <span class="hljs-title" style="color: rgb(102, 0, 102);">kembali</span><span class="hljs-params" style="color: rgb(102, 0, 102);">()</span>:</span>
+    tanya=input(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Buat Pesanan Baru ? [Y/N]  : "</span>).upper()
+    <span class="hljs-keyword" style="color: rgb(0, 0, 136);">if</span> tanya == <span class="hljs-string" style="color: rgb(0, 136, 0);">"Y"</span>:
+        list.clear()
+        harga.clear()
+        total.clear()
+        jumlahpesan.clear()
+        menu()
+    <span class="hljs-keyword" style="color: rgb(0, 0, 136);">elif</span> tanya == <span class="hljs-string" style="color: rgb(0, 136, 0);">"N"</span>:
+        print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Program Selesai...\n"</span>)
+        exit()
+    <span class="hljs-keyword" style="color: rgb(0, 0, 136);">else</span>:
+        print(<span class="hljs-string" style="color: rgb(0, 136, 0);">"Kode tidak ditemukan, ulangi lagi...\n"</span>)
+        kembali()
+login()
+</pre>
+<a href="https://jauhariq.github.io/kumpulan-tugas/"><button>Halaman Utama</button></a>
+  </body>
+</html>
