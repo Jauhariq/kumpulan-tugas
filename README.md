@@ -19,13 +19,13 @@ Demo : [Link Kumpulan Tugas](https://jauhariq.github.io/kumpulan-tugas/)
 
 | Pertemuan        | Developer | URL | Status  | Deskripsi |
 | --------------- |:---------:|:---:|:-------:|:----------|
-| Akhir | Jauhariq dan kawan" | [Link](dasar-pemrograman/ta.html) | `Aktif` | Sebuah projek untuk tugas akhir kami di suruh untuk membuat sebuah program dari python, kemudian dibuatlah sebuah program kasir sederhana |
+| Akhir | Jauhariq dan kawan" | [Link](https://jauhariq.github.io/kumpulan-tugas/dasar-pemrograman/ta.html) | `Aktif` | Sebuah projek untuk tugas akhir kami di suruh untuk membuat sebuah program dari python, kemudian dibuatlah sebuah program kasir sederhana |
 
 ### Web Programming 1
 
 | Pertemuan        | Developer | URL | Status  | Deskripsi |
 | --------------- |:---------:|:---:|:-------:|:----------|
-| Kedua | Jauhariq | [Link](web-programming1/wp1-p2.html) | `Aktif` | Jadi pertemuan kedua itu ngebahas tentang html, dan untuk tugasnya bikin table sesuai pada contoh dengan menggunakan html |
+| Kedua | Jauhariq | [Link](https://jauhariq.github.io/kumpulan-tugas/web-programming1/wp1-p2.html) | `Aktif` | Jadi pertemuan kedua itu ngebahas tentang html, dan untuk tugasnya bikin table sesuai pada contoh dengan menggunakan html |
 
 ## Kontak
 
