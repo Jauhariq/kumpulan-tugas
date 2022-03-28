@@ -17,6 +17,8 @@ Demo : [Link Kumpulan Tugas](https://jauhariq.github.io/kumpulan-tugas/)
 
 ## Daftar Matkul
 
+<a href="https://jauhariq.github.io/kumpulan-tugas/"><img src="https://i.pinimg.com/originals/0d/0a/ae/0d0aae238b7f6f4b89a627375bdd2eeb.gif"/></a>
+
 ### Dasar Pemrograman
 
 | Pertemuan        | Developer | URL | Status  | Deskripsi |
