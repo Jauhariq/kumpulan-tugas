@@ -1,5 +1,7 @@
 # Kumpulan Tugas Kuliah
 
+<a href="https://jauhariq.github.io/kumpulan-tugas/"><img src="https://i.pinimg.com/originals/75/8f/1c/758f1cd8cede9c3e4711306fc030f4ce.gif"/></a>
+
 Berisi tentang ya tugas doang yang bertujuan untuk dokumentasi bagi diri sendiri selama kuliah :v
 
 Demo : [Link Kumpulan Tugas](https://jauhariq.github.io/kumpulan-tugas/)
