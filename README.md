@@ -36,4 +36,6 @@ Demo : [Link Kumpulan Tugas](https://jauhariq.github.io/kumpulan-tugas/)
 
 ## :fire: TERIMAKASIH :fire:
 
+<a href="https://jauhariq.github.io/kumpulan-tugas/"><img src="https://c.tenor.com/CkKyfrqtoG8AAAAC/happy-cry-cry.gif"/></a>
+
 Terimakasih untuk kalian yang udah berkunjung di repo yang ga penting ini :v :heart:
